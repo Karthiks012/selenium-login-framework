@@ -7,7 +7,6 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.testng.annotations.*;
 import com.aventstack.extentreports.*;
-import com.aventstack.extentreports.testng.listener.ExtentITestListenerClassAdapter;
 import utils.ConfigReader;
 import utils.ReportManager;
 
@@ -15,7 +14,6 @@ import java.io.File;
 import java.io.IOException;
 import org.apache.commons.io.FileUtils;
 
-@Listeners({ExtentITestListenerClassAdapter.class})
 public class BaseTest {
     protected WebDriver driver;
     protected static ExtentReports extent = ReportManager.getInstance();
